@@ -1,0 +1,108 @@
+@font-face {
+    font-family: dejavu;
+    src: url(DejaVuSans.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+a:link,
+a:visited {
+    /*background-color: #f44336;*/
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    color: orange;
+}
+
+
+.box {
+    width: 300px;
+    border: 5px solid black;
+    padding: 30px;
+    margin: 30px;
+}
+
+.box:hover {
+    background-color: beige;
+}
+
+.box-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hi {
+    font-family: dejavu;
+    font-size: 3rem;
+    justify-self: left;
+}
+
+.me {
+    font-family: dejavu;
+    font-size: 3rem;
+    justify-self: left;
+}
+
+.Roshan {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 3rem;
+    justify-self: left;
+}
+
+
+/*.socials-container {*/
+
+
+/*display: flex;*/
+
+
+/*[>align-items: center;<]*/
+
+
+/*justify-content: center;*/
+
+
+/*}*/
+
+
+/*Custom Scrollbar cuz why not*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
