@@ -1,11 +1,6 @@
-@font-face {
-    font-family: dejavu;
-    src: url(DejaVuSans.ttf);
-}
-
-@font-face {
-    font-family: roboto;
-    src: url(RobotoMono-Italic-VariableFont_wght.ttf);
+a{
+    font-family: 'sf-mono', monospace;
+    justify-self: left;
 }
 
 a:link,
@@ -43,66 +38,38 @@ a:hover, a:active {
 }
 
 .hi {
-    font-family: dejavu;
+    font-family: 'DejaVu Sans', sans-serif;
     font-size: 3rem;
     justify-self: left;
 }
 
 .me {
-    font-family: dejavu;
+    font-family: 'DejaVu Sans', sans-serif;
     font-size: 3rem;
     justify-self: left;
 }
 
 .Roshan {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'sf-mono', monospace;
     font-style: italic;
     font-size: 3rem;
     justify-self: left;
 }
 
-
-/*.socials-container {*/
-
-
-/*display: flex;*/
-
-
-/*[>align-items: center;<]*/
-
-
-/*justify-content: center;*/
-
-
-/*}*/
-
-
-/*Custom Scrollbar cuz why not*/
-
-
-/* width */
+/* Changing scrollbar colors cuz why not*/
 
 ::-webkit-scrollbar {
     width: 10px;
 }
-
-
 /* Track */
-
 ::-webkit-scrollbar-track {
     background: white;
 }
-
-
 /* Handle */
-
 ::-webkit-scrollbar-thumb {
     background: black;
 }
-
-
 /* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
     background: grey;
 }
