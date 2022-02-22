@@ -25,10 +25,6 @@ a:hover, a:active {
     margin: 30px;
 }
 
-.box:hover {
-    background-color: beige;
-}
-
 .box-container {
     min-height: 100vh;
     display: flex;
