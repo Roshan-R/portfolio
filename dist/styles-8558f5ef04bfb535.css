@@ -1,0 +1,68 @@
+body{
+    margin:0
+}
+
+a{
+    font-family: 'sf-mono', monospace;
+    justify-self: left;
+}
+
+a:link,
+a:visited {
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    color: orange;
+}
+
+.box {
+    width: 300px;
+    border: 5px solid black;
+    padding: 30px;
+    margin: 30px;
+}
+
+.box-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hi {
+    font-family: 'DejaVu Sans', sans-serif;
+    font-size: 3rem;
+    justify-self: left;
+}
+
+.me {
+    font-family: 'DejaVu Sans', sans-serif;
+    font-size: 3rem;
+    justify-self: left;
+}
+
+.Roshan {
+    font-family: 'sf-mono', monospace;
+    font-style: italic;
+    font-size: 3rem;
+    justify-self: left;
+}
+
+.footer {  
+    font-family: 'sf-mono', monospace;
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    text-align: center;  
+}  
+
+a.yew{
+    padding: 15px 15px;
+}
