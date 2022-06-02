@@ -1,3 +1,7 @@
+body{
+    margin:0
+}
+
 a{
     font-family: 'sf-mono', monospace;
     justify-self: left;
@@ -5,7 +9,6 @@ a{
 
 a:link,
 a:visited {
-    /*background-color: #f44336;*/
     color: black;
     padding: 15px 25px;
     text-align: center;
@@ -16,7 +19,6 @@ a:visited {
 a:hover, a:active {
     color: orange;
 }
-
 
 .box {
     width: 300px;
@@ -52,20 +54,15 @@ a:hover, a:active {
     justify-self: left;
 }
 
-/* Changing scrollbar colors cuz why not*/
+.footer {  
+    font-family: 'sf-mono', monospace;
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    text-align: center;  
+}  
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-    background: white;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: black;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: grey;
+a.yew{
+    padding: 15px 15px;
 }
