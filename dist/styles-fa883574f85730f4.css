@@ -1,8 +1,8 @@
-body{
-    margin:0
+body {
+    margin: 0
 }
 
-a{
+a {
     font-family: 'sf-mono', monospace;
     justify-self: left;
 }
@@ -16,15 +16,46 @@ a:visited {
     display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     color: orange;
 }
 
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    /*margin: 30px;*/
+    /*width: 308px;*/
+    /*height: 120px;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+}
+
+a.overlay {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
 .box {
+    position: relative;
     width: 300px;
     border: 5px solid black;
     padding: 30px;
     margin: 30px;
+    cursor: pointer;
+    user-select:none;
 }
 
 .box-container {
@@ -54,15 +85,15 @@ a:hover, a:active {
     justify-self: left;
 }
 
-.footer {  
+.footer {
     font-family: 'sf-mono', monospace;
-    position: fixed;  
-    left: 10px;  
-    bottom: 5px;  
-    right: 10px;   
-    text-align: center;  
-}  
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+    right: 10px;
+    text-align: center;
+}
 
-a.yew{
+a.yew {
     padding: 15px 15px;
 }
