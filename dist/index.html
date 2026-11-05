@@ -1,43 +1,27 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/dejavu-sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles-b03fdfd88671a007.css">
+    <link rel="stylesheet" href="/styles-8558f5ef04bfb535.css" id="theme&#x2D;link" integrity="sha384-4bDqN1njr/itbhykGO6jEGhGctHJ7YLFJfsBG/s/Wz2tWHeJmvQ2aMhw2VnLEEGd"/>
     
 
     <title>Roshan-R</title>
+    <body>
+<script type="module">
+import init, * as bindings from '/portfolio-e6e59f90bfbbabc7.js';
+const wasm = await init({ module_or_path: '/portfolio-e6e59f90bfbbabc7_bg.wasm' });
 
-<link rel="preload" href="/portfolio-1b09fc5e5e310dc3_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/portfolio-1b09fc5e5e310dc3.js"></head><body>
 
-<script type="module">import init from '/portfolio-1b09fc5e5e310dc3.js';init('/portfolio-1b09fc5e5e310dc3_bg.wasm');</script><script>(function () {
-    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    var url = protocol + '//' + window.location.host + '/_trunk/ws';
-    var poll_interval = 5000;
-    var reload_upon_connect = () => {
-        window.setTimeout(
-            () => {
-                // when we successfully reconnect, we'll force a
-                // reload (since we presumably lost connection to
-                // trunk due to it being killed, so it will have
-                // rebuilt on restart)
-                var ws = new WebSocket(url);
-                ws.onopen = () => window.location.reload();
-                ws.onclose = reload_upon_connect;
-            },
-            poll_interval);
-    };
+window.wasmBindings = bindings;
 
-    var ws = new WebSocket(url);
-    ws.onmessage = (ev) => {
-        const msg = JSON.parse(ev.data);
-        if (msg.reload) {
-            window.location.reload();
-        }
-    };
-    ws.onclose = reload_upon_connect;
-})()
-</script></body></html>
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+<link rel="modulepreload" href="/portfolio-e6e59f90bfbbabc7.js" crossorigin="anonymous" integrity="sha384-Y2uOIk2pzhgR8G2fytdtaJLZRiW9+Upp8fl/a46mD9hscXQmrtrdEMdUEj5yv0/1"><link rel="preload" href="/portfolio-e6e59f90bfbbabc7_bg.wasm" crossorigin="anonymous" integrity="sha384-A2uRHVtlrL5iCpAfz7tP8gASWhd1HBAh69HDZni0zRlZ+qeUt/fFfvNJA6XOqR5h" as="fetch" type="application/wasm"></html>
+
